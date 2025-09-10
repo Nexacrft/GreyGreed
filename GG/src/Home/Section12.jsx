@@ -1,10 +1,11 @@
+import React from 'react'
 import { Calendar, Users, Lightbulb, ChevronLeft, ChevronRight, Quote } from "lucide-react"
 import { useState } from "react"
 
-export default function Home() {
-  const [currentSet, setCurrentSet] = useState(0)
+const Section12 = () => {
+    const [currentSet, setCurrentSet] = useState(0)
 
-  const testimonials = [
+    const testimonials = [
   {
     name: "Kanishka Mitra",
     role: "Deputy Brand Manager, Casio India",
@@ -54,24 +55,9 @@ export default function Home() {
   const currentTestimonials = testimonials.slice(currentSet * 3, (currentSet + 1) * 3)
 
   return (
-    <div className="min-h-screen bg-[#0D0D0D] text-white px-6 py-16">
-      <div className="max-w-6xl mx-auto">
-        {/* Why Choose Grey Greed Section */}
-        <section className="mb-20">
-          <h1 className="text-5xl font-bold mb-8 text-white">Why Choose Grey Greed</h1>
-          <p className="text-gray-400 text-lg leading-relaxed max-w-5xl">
-            At Grey Greed, we're not just another production company. We're a collective of passionate storytellers,
-            driven by a shared vision to craft compelling narratives that resonate deeply with audiences. Our approach
-            is rooted in collaboration, innovation, and an unwavering commitment to excellence. We believe in the power
-            of visual storytelling to inspire, inform, and transform, and we're dedicated to bringing your vision to
-            life with creativity and precision.
-          </p>
-        </section>
-
-        {/* Client Testimonials Section */}
-        <section className="mb-20 bg-white/10 text-black py-16 px-8 rounded-3xl">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-bold mb-8 text-white text-center">Client Testimonials</h2>
+     <section className="mb-20 bg-[#0D0D0D] text-black py-16 px-8 rounded-3xl">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-6xl font-semibold mb-8 text-white text-center">Client Testimonials</h2>
 
             {/* Header */}
             <div className="flex justify-between items-center mb-12">
@@ -166,46 +152,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* Key Differentiators Section */}
-        <section>
-          <h2 className="text-4xl font-bold mb-12 text-white">Key Differentiators</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Creative Visionaries */}
-            <div className="bg-white/10 p-8 rounded-3xl">
-              <Calendar className="w-8 h-8 text-gray-400 mb-6" />
-              <h3 className="text-xl font-bold text-white mb-4">Creative Visionaries</h3>
-              <p className="text-gray-400 leading-relaxed">
-                Our team comprises seasoned filmmakers, writers, and designers who bring a wealth of experience and a
-                fresh perspective to every project. We're passionate about pushing creative boundaries and crafting
-                stories that leave a lasting impression.
-              </p>
-            </div>
-
-            {/* Client-Centric Approach */}
-            <div className="bg-white/10 p-8 rounded-3xl">
-              <Users className="w-8 h-8 text-gray-400 mb-6" />
-              <h3 className="text-xl font-bold text-white mb-4">Client-Centric Approach</h3>
-              <p className="text-gray-400 leading-relaxed">
-                We believe in building strong partnerships with our clients, working closely with you every step of the
-                way to ensure your vision is not only realized but elevated. Your success is our priority.
-              </p>
-            </div>
-
-            {/* Innovative Storytelling */}
-            <div className="bg-white/10 p-8 rounded-3xl">
-              <Lightbulb className="w-8 h-8 text-gray-400 mb-6" />
-              <h3 className="text-xl font-bold text-white mb-4">Innovative Storytelling</h3>
-              <p className="text-gray-400 leading-relaxed">
-                We leverage cutting-edge technology and innovative techniques to create visually stunning and
-                emotionally resonant content. From concept to delivery, we're committed to delivering exceptional
-                quality and exceeding expectations.
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
   )
 }
+
+export default Section12

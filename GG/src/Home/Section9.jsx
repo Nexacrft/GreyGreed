@@ -13,7 +13,7 @@ const HeroVid = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#111111] py-16 px-4">
+    <div className="min-h-screen bg-[#0D0D0D] py-16 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Hero Header */}
         <div className="text-center mb-16">
@@ -29,7 +29,7 @@ const HeroVid = () => {
             and deliver — faster and smarter.
           </p>
 
-          <button className="bg-black hover:bg-white hover:text-black transform duration-200 text-white px-8 py-3 rounded-full text-base font-medium transition-colors inline-flex items-center">
+          <button className="bg-white/10 hover:bg-white hover:text-black transform duration-200 text-white px-8 py-3 rounded-full text-base font-medium transition-colors inline-flex items-center">
             Get started for Free
             <ArrowRight className="ml-2 h-4 w-4" />
           </button>

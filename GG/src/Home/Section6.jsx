@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="min-h-fit bg-[#121212] flex items-center justify-center px-4 py-10">
+    <main className="min-h-fit bg-[#0D0D0D] flex items-center justify-center px-4 py-10">
       <div className="text-center max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6 text-balance">
           Got a brief, a brand, or just a wild idea?

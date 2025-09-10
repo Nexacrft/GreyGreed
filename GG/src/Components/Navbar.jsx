@@ -18,12 +18,7 @@ export default function Home() {
 
   return (
      <nav
-  className="top-0 z-50 w-full h-[90px] px-10 shadow-2xl"
-  style={{
-    backgroundImage: "url('https://i.postimg.cc/66gSkj8t/generated-image.png')",
-  }}
-  role="navigation"
-  aria-label="Main navigation"
+  className="top-0 z-50 w-full h-[90px] px-10 shadow-2xl bg-[#0D0D0D]"
 >
         <div className="flex items-center justify-between h-full">
           {/* Logo */}

@@ -1,6 +1,6 @@
 export default function HomePage() {
   return (
-    <div className="min-h-fit bg-black text-white">
+    <div className="min-h-fit bg-[#0D0D0D] text-white">
       {/* Hero Section */}
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">

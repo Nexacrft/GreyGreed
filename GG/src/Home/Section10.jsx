@@ -1,120 +1,128 @@
 import { useState } from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { ChevronLeft, ChevronRight, Snowflake, Droplets, Sun, Mountain, TreePine } from "lucide-react"
 
-const filmImages = [
+const carouselItems = [
   {
     id: 1,
-    src: "/professional-film-camera-setup-with-tripods-and-li.jpg",
-    alt: "Professional film camera setup",
+    title: "Winter Wonderland",
+    subtitle: "Snowy mountain peaks",
+    image: "https://i.pinimg.com/736x/14/09/f7/1409f7a2568bc03c4568a4fe005f9dcd.jpg", // Added missing icon
   },
   {
     id: 2,
-    src: "/multiple-film-cameras-on-tripods-with-studio-light.jpg",
-    alt: "Multiple camera film setup",
+    title: "Lakeside Retreat",
+    subtitle: "Peaceful waters await",
+    image: "/peaceful-lake-with-mountains-reflection.jpg",
   },
   {
     id: 3,
-    src: "/film-production-studio-with-professional-cameras-t.jpg",
-    alt: "Film production studio",
+    title: "Desert Oasis", // Fixed title and subtitle
+    subtitle: "Golden sand dunes",
+    image: "/desert-oasis-with-palm-trees-golden-sand.jpg",
+  },
+  {
+    id: 4,
+    title: "Mountain Adventure",
+    subtitle: "Hiking trails and views",
+    image: "/mountain-hiking-trail-with-backpacker.jpg",
+  },
+  {
+    id: 5,
+    title: "Forest Escape",
+    subtitle: "Deep woods serenity",
+    image: "/dense-forest-path-with-tall-trees.jpg",
   },
 ]
 
-export default function FilmPortfolio() {
-  const [currentIndex, setCurrentIndex] = useState(2) // Start with middle image
+export default function ImageCarousel() {
+  const [currentIndex, setCurrentIndex] = useState(2) // Start with center card active
 
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % filmImages.length)
+    setCurrentIndex((prev) => (prev + 1) % carouselItems.length)
   }
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + filmImages.length) % filmImages.length)
+    setCurrentIndex((prev) => (prev - 1 + carouselItems.length) % carouselItems.length)
   }
 
-  const getVisibleImages = () => {
-    const visible = []
-    for (let i = -1; i <= 1; i++) {
-      const index = (currentIndex + i + filmImages.length) % filmImages.length
-      visible.push({
-        ...filmImages[index],
-        position: i,
-      })
-    }
-    return visible
+  const goToSlide = (index) => {
+    setCurrentIndex(index)
+  }
+
+  const getCardScale = (index) => {
+    const distance = Math.abs(index - currentIndex)
+    if (distance === 0) return 1.1 // Return numeric values instead of CSS classes
+    if (distance === 1) return 0.95
+    return 0.75
+  }
+
+  const getCardOpacity = (index) => {
+    const distance = Math.abs(index - currentIndex)
+    if (distance === 0) return 1
+    if (distance === 1) return 0.9
+    return 0.6
+  }
+
+  const getCardZIndex = (index) => {
+    const distance = Math.abs(index - currentIndex)
+    return carouselItems.length - distance
   }
 
   return (
-    <div className="min-h-fit bg-black text-white relative overflow-hidden">
-      {/* Main Content */}
-      <div className="flex flex-col items-center justify-center min-h-screen px-8">
-        {/* Title */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-center mb-16 text-balance">
-          Shades Of Grey: Our Films
-        </h1>
+    <div className="relative w-full max-w-6xl mx-auto px-4 rounded-3xl bg-white/10">
+      {/* Navigation Buttons */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white rounded-full p-2 md:p-3 shadow-lg transition-all duration-200 hover:scale-110"
+      >
+        <ChevronLeft className="w-4 h-4 md:w-6 md:h-6 text-slate-700" />
+      </button>
 
-        {/* Carousel Container */}
-        <div className="relative w-full max-w-7xl">
-          {/* Navigation Buttons */}
-          <button
-            className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full z-10 bg-black/50 hover:bg-black/70 text-white  p-2 transition-all duration-300 ease-out flex items-center justify-center transform hover:scale-110"
-            onClick={prevSlide}
-          >
-            <ChevronLeft className="w-6 h-6 rounded-full" />
-          </button>
+      <button
+        onClick={nextSlide}
+        className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white rounded-full p-2 md:p-3 shadow-lg transition-all duration-200 hover:scale-110"
+      >
+        <ChevronRight className="w-4 h-4 md:w-6 md:h-6 text-slate-700" />
+      </button>
 
-          <button
-            className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full z-10 bg-black/50 hover:bg-black/70 text-white  p-2 transition-all duration-300 ease-out flex items-center justify-center transform hover:scale-110"
-            onClick={nextSlide}
-          >
-            <ChevronRight className="w-6 h-6 rounded-full" />
-          </button>
+      {/* Carousel Container */}
+      <div className="relative h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden">
+        <div className="flex items-center justify-center h-full relative">
+          {carouselItems.map((item, index) => {
+            const position = index - currentIndex
+            const translateX = position * (window.innerWidth < 768 ? 200 : 280) // Responsive spacing
 
-          {/* Image Carousel */}
-          <div className="flex items-center justify-center gap-6 px-16">
-            {getVisibleImages().map((image, index) => {
-              const { position } = image
-              const isCenter = position === 0
-              const isSide = Math.abs(position) === 1
-
-              return (
-                <div
-                  key={`${image.id}-${index}`}
-                  className={`
-                    relative transition-all duration-700 ease-out cursor-pointer transform
-                    ${isCenter ? "scale-120 z-20" : ""}
-                    ${isSide ? "scale-80 z-10 opacity-80 hover:opacity-90 hover:scale-80" : ""}
-                  `}
-                  onClick={() => setCurrentIndex((currentIndex + position + filmImages.length) % filmImages.length)}
-                >
-                  <div className="relative overflow-hidden rounded-xl bg-white/10 transition-all duration-500 ease-out hover:shadow-2xl hover:shadow-white/20">
-                    <img
-                      src={image.src || "/placeholder.svg"}
-                      alt={image.alt}
-                      className={`
-                        object-cover transition-all duration-500 ease-out
-                        ${isCenter ? "w-96 h-80" : ""}
-                        ${isSide ? "w-64 h-48" : ""}
-                      `}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent transition-opacity duration-300 ease-out" />
+            return (
+              <div
+                key={item.id}
+                className="absolute transition-all duration-500 ease-out cursor-pointer"
+                style={{
+                  transform: `translateX(${translateX}px) scale(${getCardScale(index)})`, // Fixed transform syntax
+                  opacity: getCardOpacity(index),
+                  zIndex: getCardZIndex(index),
+                }}
+                onClick={() => goToSlide(index)}
+              >
+                {/* Card */}
+                <div className="relative w-48 h-64 md:w-64 md:h-80 lg:w-[800px] lg:h-[500px] bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300">
+                  {/* Background Image */}
+                  <img
+                    src={item.image || "/placeholder.svg"}
+                    alt={item.title}
+                    className="w-full h-full object-cover" // Fixed image styling - removed fill prop and added proper sizing
+                    onError={(e) => {
+                      e.target.src = "/landscape-placeholder.jpg"
+                    }}
+                  />
+                  {/* Content Overlay */}
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <h3 className="text-lg md:text-xl font-bold mb-1 text-balance">{item.title}</h3>
+                    <p className="text-sm md:text-base opacity-90 text-pretty">{item.subtitle}</p>
                   </div>
                 </div>
-              )
-            })}
-          </div>
-
-          {/* Dots Indicator */}
-          <div className="flex justify-center gap-2 mt-8">
-            {filmImages.map((_, index) => (
-              <button
-                key={index}
-                className={`
-                  w-2 h-2 rounded-full transition-all duration-500 ease-out transform hover:scale-150
-                  ${index === currentIndex ? "bg-white scale-125" : "bg-white/30 hover:bg-white/50"}
-                `}
-                onClick={() => setCurrentIndex(index)}
-              />
-            ))}
-          </div>
+              </div>
+            )
+          })}
         </div>
       </div>
     </div>
