@@ -1,68 +1,133 @@
 import React from 'react';
-import video1 from '../Videos/video1.mov'; // Ensure you have a video file in this path
-import video2 from '../Videos/video2.mov'; // Ensure you have a video file in this path
 
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-[#0D0D0D] text-white px-8 py-12 ">
+    <div className="min-h-screen bg-[#0D0D0D] text-white px-8 py-12">
       {/* Section 2: Case Studies */}
       <section className="max-w-7xl mx-auto">
         <h2 className="text-5xl font-thin text-white mb-10">Case Studies</h2>
 
         <div className="space-y-12">
-          {/* Project 1 Case Study */}
+          {/* Project 1 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
-              <h3 className="text-3xl font-light text-white">Project 1</h3>
+              <h3 className="text-3xl font-light text-white">
+                Project 1 – Harr Nivala Mamta Wala
+              </h3>
               <div className="space-y-2 text-white/60">
+                <p><span className="font-semibold">Client:</span> DeHaat Honest Farms</p>
+                <p><span className="font-semibold">Agency:</span> Grey Greed Productions</p>
+                <p><span className="italic">Campaign:</span> “When Moms Became Brand Ambassadors”</p>
+                <p>2M+ views · Documented real-life moms · Massive engagement</p>
                 <p>
-                  <span className="font-semibold">Problem:</span> Low brand awareness.
+                  Harr Nivala Mamta Wala wasn’t just a campaign—it was a movement. 
+                  We turned real mom cooks into storytellers, crafted a film straight from the heart, 
+                  and sparked conversations around ghar ka khana.
                 </p>
                 <p>
-                  <span className="font-semibold italic">Idea:</span> Create a viral video campaign.
-                </p>
-                <p>
-                  <span className="font-bold">Result:</span> Increased brand visibility by 300%.
+                  <span className="font-bold">Result:</span> 5M+ views, high engagement, and elevated brand credibility—
+                  positioning DeHaat Honest Farms as a trusted, family-first food brand.
                 </p>
               </div>
             </div>
             <div className="aspect-video rounded-lg overflow-hidden">
-  <video 
-    src={video1}   // Replace with your video path              // Adds play/pause, volume, fullscreen controls
-    autoPlay={true}        // Change to true if you want autoplay
-    loop                    // Keeps replaying
-    muted                   // Useful if autoplay is on
-    className="w-full h-full object-cover"
-  />
-</div>
+              <video 
+                src=""
+                autoPlay
+                loop
+                muted
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
-          {/* Project 2 Case Study */}
+          {/* Project 2 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
-              <h3 className="text-3xl font-light text-white">Project 2</h3>
+              <h3 className="text-3xl font-light text-white">Project 2 – G-SHOCK Flagship Launch</h3>
               <div className="space-y-2 text-white/60">
+                <p><span className="font-semibold">Client:</span> G-SHOCK</p>
+                <p><span className="font-semibold">Agency:</span> Grey Greed Productions</p>
+                <p>50M+ views · Store Launch Campaign</p>
                 <p>
-                  <span className="font-semibold">Problem:</span> Stagnant social media engagement.
+                  Grey Greed Productions partnered with G-SHOCK to launch their flagship store 
+                  in Connaught Place, Delhi. Through a high-energy film rooted in Delhi’s street culture, 
+                  supported by vox pops and stills, the campaign resonated strongly with the youth.  
                 </p>
                 <p>
-                  <span className="font-semibold italic">Idea:</span> Develop a series of short, engaging video content.
-                </p>
-                <p>
-                  <span className="font-bold">Result:</span> Boosted engagement rates by 150%.
+                  <span className="font-bold">Result:</span> Massive buzz, cultural resonance, 
+                  and bold positioning of G-SHOCK’s philosophy of absolute toughness.
                 </p>
               </div>
             </div>
-<div className="aspect-video rounded-lg overflow-hidden">
-  <video 
-    src={video2}   // Replace with your video path             // Adds play/pause, volume, fullscreen controls
-    autoPlay={true}        // Change to true if you want autoplay
-    loop                    // Keeps replaying
-    muted                   // Useful if autoplay is on
-    className="w-full h-full object-cover"
-  />
-</div>
+            <div className="aspect-video rounded-lg overflow-hidden">
+              <video 
+                src=""
+                autoPlay
+                loop
+                muted
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Project 3 */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="space-y-4">
+              <h3 className="text-3xl font-light text-white">Project 3 – #Maakipasandkakhaana</h3>
+              <div className="space-y-2 text-white/60">
+                <p><span className="font-semibold">Client:</span> DeHaat Honest Farms</p>
+                <p><span className="font-semibold">Agency:</span> Grey Greed Productions</p>
+                <p>1M+ views · Influencer campaign · 1 Main Film</p>
+                <p>
+                  For Mother’s Day, DeHaat Honest Farms wanted more than just an ad—they wanted 
+                  a heartfelt celebration. We created #Maakipasandkakhaana, producing the film 
+                  end-to-end, along with influencer collaborations and an original song.  
+                </p>
+                <p>
+                  <span className="font-bold">Result:</span> A campaign that made people hum along to mom’s love.
+                </p>
+              </div>
+            </div>
+            <div className="aspect-video rounded-lg overflow-hidden">
+              <video 
+                src=""
+                autoPlay
+                loop
+                muted
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Project 4 */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="space-y-4">
+              <h3 className="text-3xl font-light text-white">Project 4 – Casio Mini Keyboard</h3>
+              <div className="space-y-2 text-white/60">
+                <p><span className="font-semibold">Client:</span> Casio Music</p>
+                <p><span className="font-semibold">Agency:</span> Grey Greed Productions</p>
+                <p>60M+ views · 2 Main Films · End-to-End Production</p>
+                <p>
+                  Grey Greed Productions crafted two short, relatable films that positioned the Mini Keyboard 
+                  as more than an instrument—a joyful playtime companion for kids and parents alike. 
+                </p>
+                <p>
+                  <span className="font-bold">Result:</span> From strategy to scripting, direction, and production, 
+                  our team handled the project end-to-end—delivering massive reach and cultural impact.
+                </p>
+              </div>
+            </div>
+            <div className="aspect-video rounded-lg overflow-hidden">
+              <video 
+                src=""
+                autoPlay
+                loop
+                muted
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
