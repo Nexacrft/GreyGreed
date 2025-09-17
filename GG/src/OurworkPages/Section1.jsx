@@ -1,4 +1,4 @@
-import video1 from '../Videos/ogvideo1.mp4'
+
 
 export default function ProjectShowcase() {
   return (
@@ -16,7 +16,7 @@ export default function ProjectShowcase() {
 <div className="mb-16">
   <div className="relative bg-gray-300 rounded-3xl overflow-hidden aspect-video flex items-center justify-center">
     <video
-      src={video1} // replace with your video path
+      src="https://res.cloudinary.com/djzzj4s72/video/upload/v1758133726/ogvideo1_ba1hp9.mp4" // replace with your video path
       className="w-full h-full object-cover"
       autoPlay={true}
       loop
