@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-[#0D0D0D] text-white px-8 py-12">
@@ -32,13 +31,12 @@ export default function HomePage() {
               </div>
             </div>
             <div className="aspect-video rounded-lg overflow-hidden">
-              <video 
-                src=""
-                autoPlay
-                loop
-                muted
-                className="w-full h-full object-cover"
-              />
+              <iframe
+                src="https://drive.google.com/file/d/1lhKvtvZvajIUIFSf_iNk7Xm1rCha9q6t/preview"
+                className="w-full h-full"
+                allow="autoplay"
+                title="Project 1 Video"
+              ></iframe>
             </div>
           </div>
 
@@ -62,13 +60,12 @@ export default function HomePage() {
               </div>
             </div>
             <div className="aspect-video rounded-lg overflow-hidden">
-              <video 
-                src=""
-                autoPlay
-                loop
-                muted
-                className="w-full h-full object-cover"
-              />
+              <iframe
+                src="https://drive.google.com/file/d/1gl9eJ3dwcAES9AU-___ukItP4o1qh6Ms/preview"
+                className="w-full h-full"
+                allow="autoplay"
+                title="Project 2 Video"
+              ></iframe>
             </div>
           </div>
 
@@ -91,13 +88,12 @@ export default function HomePage() {
               </div>
             </div>
             <div className="aspect-video rounded-lg overflow-hidden">
-              <video 
-                src=""
-                autoPlay
-                loop
-                muted
-                className="w-full h-full object-cover"
-              />
+              <iframe
+                src="https://drive.google.com/file/d/1UTaw3XonceTUPIdUEdPXBDTQjLr1h3_s/preview"
+                className="w-full h-full"
+                allow="autoplay"
+                title="Project 3 Video"
+              ></iframe>
             </div>
           </div>
 
@@ -120,13 +116,12 @@ export default function HomePage() {
               </div>
             </div>
             <div className="aspect-video rounded-lg overflow-hidden">
-              <video 
-                src=""
-                autoPlay
-                loop
-                muted
-                className="w-full h-full object-cover"
-              />
+              <iframe
+                src="https://drive.google.com/file/d/19r9-nXTG8ZwE75xIaNnQyHXqEdDukQ5A/preview"
+                className="w-full h-full"
+                allow="autoplay"
+                title="Project 4 Video"
+              ></iframe>
             </div>
           </div>
         </div>

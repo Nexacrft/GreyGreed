@@ -1,16 +1,18 @@
+import { Link } from "react-router";
+
 export default function Home() {
   return (
     <main className="min-h-fit bg-[#0D0D0D] flex items-center justify-center px-4 py-10">
-      <div className="text-center max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6 text-balance">
+      <div className="text-center max-w-6xl mx-auto">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-montserrat font-light text-white mb-6 text-balance">
           Got a brief, a brand, or just a wild idea?
         </h1>
         <p className="text-lg md:text-xl text-gray-300 mb-8 text-pretty">
           We're all ears — and a whole lot of execution.
         </p>
-        <button className="bg-slate-300 hover:bg-slate-300 text-slate-900 font-medium px-8 py-3 rounded-full text-lg transition-colors duration-200 cursor-pointer">
+        <Link to="/contact" className="bg-white/10 hover:bg-white hover:text-black  text-white font-medium px-8 py-3 rounded-full text-base font-montserrat transition-colors duration-200 cursor-pointer">
           Say Hello →
-        </button>
+        </Link>
       </div>
     </main>
   )

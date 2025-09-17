@@ -1,57 +1,88 @@
-import { useState } from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { useState, useEffect, useRef } from "react"
+
 
 const carouselItems = [
   {
     id: 1,
-    title: "Winter Wonderland",
-    subtitle: "Snowy mountain peaks",
-    image: "", // Added missing icon
+    title: "Mars",
+    subtitle: "Exploring new horizons, igniting innovation, and pushing boundaries to transform every vision into extraordinary reality.",
+    video: "https://res.cloudinary.com/djzzj4s72/video/upload/v1758131278/video02_xw5rwk.mp4",
   },
   {
     id: 2,
-    title: "Lakeside Retreat",
-    subtitle: "Peaceful waters await",
-    image: "/peaceful-lake-with-mountains-reflection.jpg",
+    title: "Casio",
+    subtitle: "Blending precision with creativity, capturing timeless moments, and crafting experiences that resonate across generations.",
+    video: "https://res.cloudinary.com/djzzj4s72/video/upload/v1758131381/video03_hy4wmd.mp4",
   },
   {
     id: 3,
-    title: "Desert Oasis", // Fixed title and subtitle
-    subtitle: "Golden sand dunes",
-    image: "/desert-oasis-with-palm-trees-golden-sand.jpg",
+    title: "Pink Celestial",
+    subtitle: "Turning imagination into vibrant stories, illuminating dreams with every frame, and creating a universe of unforgettable visuals.",
+    video: "https://res.cloudinary.com/djzzj4s72/video/upload/v1758132287/video04_1_1_sq4tl2.mp4",
   },
   {
     id: 4,
-    title: "Mountain Adventure",
-    subtitle: "Hiking trails and views",
-    image: "/mountain-hiking-trail-with-backpacker.jpg",
-  },
-  {
-    id: 5,
-    title: "Forest Escape",
-    subtitle: "Deep woods serenity",
-    image: "/dense-forest-path-with-tall-trees.jpg",
+    title: "Zomato",
+    subtitle: "Transforming ideas into immersive experiences, celebrating flavor, culture, and connection through every captivating creation.",
+    video: "https://res.cloudinary.com/djzzj4s72/video/upload/v1758132522/video05_1_ivbokb.mov",
   },
 ]
 
-export default function ImageCarousel() {
+// ✅ LazyVideo Component
+const LazyVideo = ({ src, className }) => {
+  const [isVisible, setIsVisible] = useState(false)
+  const videoRef = useRef()
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setIsVisible(true)
+            obs.disconnect()
+          }
+        })
+      },
+      { threshold: 0.3 }
+    )
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current)
+    }
+
+    return () => {
+      if (videoRef.current) observer.unobserve(videoRef.current)
+    }
+  }, [])
+
+  return (
+    <video
+      ref={videoRef}
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="none"
+      className={className}
+    >
+      {isVisible && <source src={src} type="video/mp4" />}
+    </video>
+  )
+}
+
+export default function InfiniteImageCarousel() {
   const [currentIndex, setCurrentIndex] = useState(2) // Start with center card active
 
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % carouselItems.length)
-  }
-
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + carouselItems.length) % carouselItems.length)
-  }
-
-  const goToSlide = (index) => {
-    setCurrentIndex(index)
-  }
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex(prev => (prev + 1) % carouselItems.length)
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [])
 
   const getCardScale = (index) => {
     const distance = Math.abs(index - currentIndex)
-    if (distance === 0) return 1.1 // Return numeric values instead of CSS classes
+    if (distance === 0) return 1.1
     if (distance === 1) return 0.95
     return 0.75
   }
@@ -71,59 +102,51 @@ export default function ImageCarousel() {
   return (
     <div className="w-full max-w-6xl mx-auto px-4 my-10">
       <div className="text-center mb-8">
-        <h1 className="text-4xl md:text-5xl lg:text-7xl font-thin text-white mb-4 text-balance">
-          Discover Nature's Beauty
-        </h1>
-        <p className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto text-pretty">
-          Explore breathtaking landscapes and find your perfect escape in these stunning destinations
-        </p>
+        <div className="bg-[#0D0D0D] backdrop-blur-sm rounded-2xl p-8">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-thin text-white mb-4 text-balance">
+            Shades of Grey
+          </h1>
+          <p className="text-lg md:text-2xl text-white/50 font-normal max-w-4xl mx-auto text-pretty">
+            Turning bold ideas into breathtaking stories, capturing every emotion, every frame, and every shade to create unforgettable cinematic masterpieces
+          </p>
+        </div>
       </div>
 
       <div className="relative rounded-3xl">
-        {/* Navigation Buttons */}
-        <button
-          onClick={prevSlide}
-          className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 p-2 md:p-3  transition-all duration-200 "
-        >
-          <ChevronLeft className="w-4 h-4 md:w-6 md:h-6 text-white" />
-        </button>
-
-        <button
-          onClick={nextSlide}
-          className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-20 p-2 md:p-3  transition-all duration-200 "
-        >
-          <ChevronRight className="w-4 h-4 md:w-6 md:h-6 text-white" />
-        </button>
-
         {/* Carousel Container */}
         <div className="relative h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden">
           <div className="flex items-center justify-center h-full relative">
             {carouselItems.map((item, index) => {
               const position = index - currentIndex
-              const translateX = position * (window.innerWidth < 768 ? 200 : 280) // Responsive spacing
+              const translateX = position * (typeof window !== "undefined" && window.innerWidth < 768 ? 200 : 280)
 
               return (
                 <div
                   key={item.id}
-                  className="absolute transition-all duration-500 ease-out cursor-pointer"
+                  className="absolute transition-all duration-700 ease-in-out"
                   style={{
-                    transform: `translateX(${translateX}px) scale(${getCardScale(index)})`, // Fixed transform syntax
+                    transform: `translateX(${translateX}px) scale(${getCardScale(index)})`,
                     opacity: getCardOpacity(index),
                     zIndex: getCardZIndex(index),
                   }}
-                  onClick={() => goToSlide(index)}
                 >
                   {/* Card */}
-                  <div className="relative w-48 h-64 md:w-64 md:h-80 lg:w-[800px] lg:h-[500px] bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300">
-                    {/* Background Image */}
-                    <img
-                      src={item.image || "/placeholder.svg"}
-                      alt={item.title}
-                      className="w-full h-full object-cover" // Fixed image styling - removed fill prop and added proper sizing
-                      onError={(e) => {
-                        e.target.src = "/landscape-placeholder.jpg"
-                      }}
+                  <div className="relative w-48 h-64 md:w-64 md:h-80 lg:w-[800px] lg:h-[500px] bg-white rounded-3xl overflow-hidden shadow-2xl">
+                    {/* Background Video */}
+                    <LazyVideo
+                      src={item.video || "/placeholder.mp4"}
+                      className="w-full h-full object-cover"
                     />
+
+                    {/* Title + Subtitle Overlay */}
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                      <h2 className="text-white text-lg md:text-4xl font-bold font-montserrat">
+                        {item.title}
+                      </h2>
+                      <p className="text-white/70 text-sm font-semibold md:text-lg">
+                        {item.subtitle}
+                      </p>
+                    </div>
                   </div>
                 </div>
               )

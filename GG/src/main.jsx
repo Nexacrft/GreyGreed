@@ -6,6 +6,9 @@ import Service from './Our Services/Section1.jsx'
 import Whygg from './Pages/Whygg.jsx'
 import Contact from './Pages/Contact.jsx'
 import App from './App.jsx'
+import Section1 from './OurworkPages/Section1.jsx'  // 👈 import Section1 for Work child
+import Section2 from './OurworkPages/Section2.jsx'  // 👈 import Section1 for Work child
+import Section3 from './OurworkPages/Section3.jsx'  // 👈 import Section1 for Work child
 import './index.css'
 
 import {
@@ -16,30 +19,41 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
-    children :
-    [
+    element: <App />,
+    children: [
       {
-      path : "/",
-      element : < Home />
-     },
+        path: "/",
+        element: <Home />
+      },
       {
-      path : "/work",
-      element : < Work />
-     },
+        path: "/work",
+        element: <Work />,
+      },
       {
-      path : "/service",
-      element : < Service />
-     },
+        path: "/service",
+        element: <Service />
+      },
       {
-      path : "/whygg",
-      element : < Whygg />
-     },
+        path: "/whygg",
+        element: <Whygg />
+      },
       {
-      path : "/contact",
-      element : < Contact />
-     },
-   ]
+        path: "/contact",
+        element: <Contact />
+      },
+      {
+        path: "/section1",
+        element: <Section1 />
+      },
+      {
+        path: "/section2",
+        element: <Section2 />
+      },
+      {
+        path: "/section3",
+        element: <Section3 />
+      },
+    ]
   },
 ]);
 

@@ -35,7 +35,7 @@ export default function Home() {
               <a
                 key={link.href}
                 href={link.href}
-                className="font-inter font-medium text-white text-base hover:text-[#a8a8a8] transition-colors duration-300"
+                className="font-montserrat font-thin text-white text-xl hover:text-[#a8a8a8] transition-colors duration-300"
                 aria-label={link.label}
               >
                 {link.label}
@@ -46,15 +46,15 @@ export default function Home() {
           {/* Desktop CTA Button */}
           <Link
            to="/contact"
-            className="hidden md:block font-inter font-semibold text-black text-base bg-[#6ba5b8] hover:bg-[#5a8d9e] px-6 py-2 rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#6ba5b8] focus:ring-offset-2 focus:ring-offset-[#0d0d0d]"
+            className="hidden md:block font-montserrat font-normal hover:bg-white hover:text-black text-white text-base bg-white/10 px-9 py-3 rounded-full transition-colors duration-300 focus:outline-none"
             aria-label="Get a quote for our services"
           >
-            Get a Quote
+            Get In Touch
           </Link>
 
           {/* Mobile Hamburger Button */}
           <Link
-            to="/contact"
+            to="#"
             className="md:hidden text-white p-2 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0d0d0d]"
             onClick={toggleMenu}
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -73,7 +73,7 @@ export default function Home() {
           <div className="flex flex-col p-6 space-y-6">
             {/* Mobile CTA Button */}
             <button
-              className="font-inter font-semibold text-black text-base bg-[#6ba5b8] hover:bg-[#5a8d9e] px-6 py-3 rounded-xl transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#6ba5b8] focus:ring-offset-2 focus:ring-offset-[#0d0d0d]"
+              className="font-inter font-semibold text-black text-base bg-white/10 px-6 py-3 rounded-xl transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#6ba5b8] focus:ring-offset-2 focus:ring-offset-[#0d0d0d]"
               aria-label="Get a quote for our services"
             >
               Get a Quote
