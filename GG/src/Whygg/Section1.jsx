@@ -10,7 +10,7 @@ export default function Home() {
     role: "Deputy Brand Manager, Casio India",
     location: "India",
     quote: "Working with Grey Greed on our Casio Mini Keyboard campaign has been an incredibly rewarding experience. Their ability to translate our brand’s vision into two engaging short films was nothing short of exceptional. The storytelling was crisp, engaging, and visually vibrant - making the content not just informative, but truly memorable for the users by catching their attention. I deeply appreciate the team’s collaborative spirit, agility, and commitment to excellence. They’ve helped us bring music closer to our audience in a way that feels authentic, aspirational, and fun.",
-    image: "https://i.pinimg.com/736x/b5/06/9b/b5069b347f3f39c508dbcf7eedc6c38c.jpg",
+    image: "",
   },
   {
     name: "Abhishek Chaktraborty",
