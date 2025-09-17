@@ -69,9 +69,9 @@ export default function Home() {
         </section>
 
         {/* Client Testimonials Section */}
-        <section className="mb-20 bg-white/10 text-black py-16 px-8 rounded-3xl">
+        <section className="mb-20  text-black py-16 px-8 rounded-3xl">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-bold mb-8 text-white text-center">Client Testimonials</h2>
+            <h2 className="text-5xl font-light font-montserrat mb-8 text-white text-center">Client Testimonials</h2>
 
             {/* Header */}
             <div className="flex justify-between items-center mb-12">
