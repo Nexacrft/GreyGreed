@@ -32,14 +32,14 @@ export default function Home() {
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center space-x-10">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
+              <Link
+                to={link.href}
                 href={link.href}
                 className="font-montserrat font-thin text-white text-xl hover:text-[#a8a8a8] transition-colors duration-300"
                 aria-label={link.label}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
 
