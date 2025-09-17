@@ -146,7 +146,7 @@ export default function Home() {
                         <img
                           src={testimonial.image || "/placeholder.svg"}
                           alt={testimonial.name}
-                          className="w-15 h-15 rounded-full object-cover"
+                          className="lg:w-15 lg:h-15 w-10 h-10 rounded-full object-cover"
                         />
                       </div>
 
