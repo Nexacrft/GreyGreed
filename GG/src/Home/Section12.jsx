@@ -57,7 +57,7 @@ const Section12 = () => {
   return (
      <section className="mb-20 bg-[#0D0D0D] text-black py-16 px-8 rounded-3xl">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-6xl font-thin font-montserrat mb-8 text-white text-center">Client Testimonials</h2>
+            <h2 className="text-3xl lg:text-6xl font-thin font-montserrat mb-8 text-white text-center">Client Testimonials</h2>
 
             {/* Header */}
             <div className="flex justify-between items-center mb-12">
