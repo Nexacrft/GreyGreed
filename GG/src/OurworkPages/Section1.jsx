@@ -1,4 +1,4 @@
-
+import { Link } from "react-router";
 
 export default function ProjectShowcase() {
   return (
@@ -52,9 +52,11 @@ export default function ProjectShowcase() {
 
         {/* Back to Work Button */}
         <div>
-          <button className="bg-white/10 text-white px-6 py-3 rounded-full font-medium transition-colors">
+          <Link 
+          to="/work"
+          className="bg-white/10 text-white px-6 py-3 rounded-full font-medium transition-colors">
             Back to Work
-          </button>
+          </Link>
         </div>
       </div>
     </div>
