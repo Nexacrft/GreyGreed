@@ -57,7 +57,7 @@ const Section12 = () => {
   return (
      <section className="mb-20 bg-[#0D0D0D] text-black py-16 px-8 rounded-3xl">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-6xl font-semibold mb-8 text-white text-center">Client Testimonials</h2>
+            <h2 className="text-6xl font-thin font-montserrat mb-8 text-white text-center">Client Testimonials</h2>
 
             {/* Header */}
             <div className="flex justify-between items-center mb-12">
@@ -104,7 +104,7 @@ const Section12 = () => {
                         <img
                           src={testimonial.image || "/placeholder.svg"}
                           alt={testimonial.name}
-                          className="w-15 h-15 rounded-full object-cover"
+                          className="w-10 lg:w-15 h-10 lg:h-15 rounded-full object-cover"
                         />
                       </div>
 
@@ -132,7 +132,7 @@ const Section12 = () => {
                         <img
                           src={testimonial.image || "/placeholder.svg"}
                           alt={testimonial.name}
-                          className="w-15 h-15 rounded-full object-cover"
+                          className="w-10 lg:w-15 h-10 lg:h-15 rounded-full object-cover"
                         />
                       </div>
 
