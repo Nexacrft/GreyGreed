@@ -56,11 +56,11 @@ const HeroVid = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0D0D0D] py-16 px-4">
+    <div className="min-h-screen bg-[#0D0D0D] py-16 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Hero Header */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl mb-4 text-balance">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl mb-4 text-balance">
             <span className="font-serif italic font-light text-white">
               Not Chasing Noise 
               <br />
@@ -71,7 +71,7 @@ const HeroVid = () => {
              
             </span>
           </h1>
-          <p className="text-4xl text-gray-300/60 max-w-3xl mx-auto mb-8 leading-relaxed">
+          <p className="text-lg lg:text-4xl text-gray-300/60 max-w-3xl mx-auto mb-8 leading-relaxed">
             We are a Creative Agency and Production House
           </p>
         </div>
