@@ -2,7 +2,7 @@ export function AboutUs() {
   return (
     <section className="bg-[#111111] text-white py-16 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 items-left">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left side - Image */}
           <div className="flex justify-center">
             <div className="relative w-[600px] h-96 rounded overflow-hidden ">
