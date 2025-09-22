@@ -16,9 +16,9 @@ const carouselItems = [
   },
   {
     id: 3,
-    title: "Pink Celestial",
-    subtitle: "Turning imagination into vibrant stories, illuminating dreams with every frame, and creating a universe of unforgettable visuals.",
-    video: "https://res.cloudinary.com/djzzj4s72/video/upload/v1758132287/video04_1_1_sq4tl2.mp4",
+    title: "women’s day",
+    subtitle: "Celebrating the strength, grace, and brilliance of women through powerful stories that inspire generations.",
+    video: "https://res.cloudinary.com/djzzj4s72/video/upload/v1758518523/dehaat_Women_s_day_campaign_-_Grey_Greed_1080p_h264_jiuus6.mp4",
   },
   {
     id: 4,

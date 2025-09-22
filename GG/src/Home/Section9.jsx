@@ -71,7 +71,7 @@ const HeroVid = () => {
              
             </span>
           </h1>
-          <p className="text-lg lg:text-4xl text-gray-300/60 max-w-3xl mx-auto mb-8 leading-relaxed">
+          <p className="text-lg lg:text-2xl font-thin  text-gray-300/60 max-w-3xl mx-auto mb-8 leading-relaxed">
             We are a Creative Agency and Production House
           </p>
         </div>

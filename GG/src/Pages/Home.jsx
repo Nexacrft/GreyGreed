@@ -22,7 +22,6 @@ const Home = () => {
   <Section13/>
   <Section4/>
   <Section12/>
-  <Section3/>
   <Section6/>
   </div>
    </>

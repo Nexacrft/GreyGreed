@@ -11,7 +11,7 @@ const Section12 = () => {
     role: "Deputy Brand Manager, Casio India",
     location: "India",
     quote: "Working with Grey Greed on our Casio Mini Keyboard campaign has been an incredibly rewarding experience. Their ability to translate our brand’s vision into two engaging short films was nothing short of exceptional. The storytelling was crisp, engaging, and visually vibrant - making the content not just informative, but truly memorable for the users by catching their attention. I deeply appreciate the team’s collaborative spirit, agility, and commitment to excellence. They’ve helped us bring music closer to our audience in a way that feels authentic, aspirational, and fun.",
-    image: "/kanishka-mitra.png",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQEOvUq3DflULw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1727972204136?e=1761177600&v=beta&t=NwwnJxVeDMt2vANuXm8dqG4PB97cxiRR4618j62XVTA",
   },
   {
     name: "Abhishek Chaktraborty",
@@ -25,7 +25,7 @@ const Section12 = () => {
     role: "Vice President - Marketing, DeHaat",
     location: "India",
     quote: "Partnering with Grey Greed has been a game changer for DeHaat Honest Farms. They started from scratch, building our social media presence from the ground up. Be it content creation, influencer associations or building innovative ways of content dissemination, Grey Greed brought fresh ideas, consistency, and a deep understanding of our brand. The team is professional, creative, and always responsive. It's been wonderful co-creating with them.",
-    image: "/akash-malhotra.png",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQFYEeafamkaIg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723482580706?e=1761177600&v=beta&t=RMMQFnafam2I7pR9neXFvNRKHXkikvFkq7lAHOADr9k",
   },
   {
     name: "Muskan Jain",
