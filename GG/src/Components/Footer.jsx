@@ -16,17 +16,11 @@ export function Footer() {
 
         {/* Social media icons */}
         <div className="flex justify-center items-center gap-6 mb-8">
-          <a href="#" className="text-white hover:text-gray-300 transition-colors" aria-label="Instagram">
+          <a href="https://www.instagram.com/greygreedproductions/" className="text-white hover:text-gray-300 transition-colors" aria-label="Instagram">
             <Instagram size={24} />
           </a>
           <a href="#" className="text-white hover:text-gray-300 transition-colors" aria-label="LinkedIn">
             <Linkedin size={24} />
-          </a>
-          <a href="#" className="text-white hover:text-gray-300 transition-colors" aria-label="Twitter">
-            <Twitter size={24} />
-          </a>
-          <a href="#" className="text-white hover:text-gray-300 transition-colors" aria-label="YouTube">
-            <Youtube size={24} />
           </a>
         </div>
 

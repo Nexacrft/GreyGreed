@@ -1,5 +1,6 @@
 import { Calendar, Users, Lightbulb, ChevronLeft, ChevronRight, Quote } from "lucide-react"
 import { useState } from "react"
+import Section12 from "../Home/Section12" 
 
 export default function Home() {
   const [currentSet, setCurrentSet] = useState(0)
@@ -70,101 +71,7 @@ export default function Home() {
 
         {/* Client Testimonials Section */}
         <section className="mb-20  text-black py-16 px-8 rounded-3xl">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-5xl font-light font-montserrat mb-8 text-white text-center">Client Testimonials</h2>
-
-            {/* Header */}
-            <div className="flex justify-between items-center mb-12">
-              <div className="flex gap-2">
-                <button
-                  onClick={prevSet}
-                  className="w-12 h-12 bg-white/10 text-white rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
-                >
-                  <ChevronLeft className="w-5 h-5" />
-                </button>
-                <button
-                  onClick={nextSet}
-                  className="w-12 h-12 bg-white/10 text-white rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
-                >
-                  <ChevronRight className="w-5 h-5" />
-                </button>
-              </div>
-              <div className="flex gap-2">
-                {[0, 1].map((index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentSet(index)}
-                    className={`w-3 h-3 rounded-full transition-colors ${
-                      currentSet === index ? "bg-gray-800" : "bg-white"
-                    }`}
-                  />
-                ))}
-              </div>
-            </div>
-
-            <div className="relative overflow-hidden">
-              <div
-                className="flex transition-transform duration-700 ease-in-out"
-                style={{ transform: `translateX(-${currentSet * 100}%)` }}
-              >
-                {/* First set of testimonials */}
-                <div className="w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-3 gap-5">
-                  {testimonials.slice(0, 3).map((testimonial, index) => (
-                    <div
-                      key={`set-0-${index}`}
-                      className="bg-white/10 p-8 rounded-3xl shadow-3xl transform transition-all duration-500 "
-                    >
-                      <div className="flex items-center gap-4 mb-6">
-                        <img
-                          src={testimonial.image || "/placeholder.svg"}
-                          alt={testimonial.name}
-                          className="lg:w-15 lg:h-15 w-10 h-10 rounded-full object-cover"
-                        />
-                      </div>
-
-                      <Quote className="w-8 h-8 text-blue-700 mb-6" />
-
-                      <p className="text-sm font-thin text-white leading-tight mb-8">{testimonial.quote}</p>
-
-                      <div className="border-l-4 border-gray-300 pl-4">
-                        <p className="font-semibold text-white">{testimonial.name}</p>
-                        <p className="text-sm text-gray-500">{testimonial.role}</p>
-                        <p className="text-sm text-gray-500">{testimonial.location}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-
-                {/* Second set of testimonials */}
-                <div className="w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-3 gap-5">
-                  {testimonials.slice(3, 6).map((testimonial, index) => (
-                    <div
-                      key={`set-1-${index}`}
-                      className="bg-white/10 p-8 rounded-3xl shadow-3xl transform transition-all duration-500 "
-                    >
-                      <div className="flex items-center gap-4 mb-6">
-                        <img
-                          src={testimonial.image || "/placeholder.svg"}
-                          alt={testimonial.name}
-                          className="lg:w-15 lg:h-15 w-10 h-10 rounded-full object-cover"
-                        />
-                      </div>
-
-                      <Quote className="w-8 h-8 text-blue-700 mb-6" />
-
-                      <p className="text-sm font-thin text-white leading-tight mb-8">{testimonial.quote}</p>
-
-                      <div className="border-l-4 border-gray-300 pl-4">
-                        <p className="font-semibold text-white">{testimonial.name}</p>
-                        <p className="text-sm text-gray-500">{testimonial.role}</p>
-                        <p className="text-sm text-gray-500">{testimonial.location}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
+          <Section12/>
         </section>
 
         {/* Key Differentiators Section */}

@@ -19,7 +19,6 @@ const Home = () => {
   <Section2/>
   <Section10/>
   <Section8/>
-  <Section13/>
   <Section4/>
   <Section12/>
   <Section6/>

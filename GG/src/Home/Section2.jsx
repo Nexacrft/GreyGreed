@@ -35,7 +35,7 @@ export function LogoShowcase() {
           style={{
             animation: "scroll 10s linear infinite",
             animationName: "scroll",
-            animationDuration: "10s",
+            animationDuration: "40s",
             animationTimingFunction: "linear",
             animationIterationCount: "infinite",
           }}

@@ -1,30 +1,33 @@
 import { useState, useEffect, useRef } from "react"
 
-
 const carouselItems = [
   {
     id: 1,
     title: "Mars",
     subtitle: "Exploring new horizons, igniting innovation, and pushing boundaries to transform every vision into extraordinary reality.",
     video: "https://res.cloudinary.com/djzzj4s72/video/upload/v1758131278/video02_xw5rwk.mp4",
+    link: "https://youtu.be/FZvbR8M5lXk ", // ✅ Add YouTube link
   },
   {
     id: 2,
     title: "Casio",
     subtitle: "Blending precision with creativity, capturing timeless moments, and crafting experiences that resonate across generations.",
     video: "https://res.cloudinary.com/djzzj4s72/video/upload/v1758131381/video03_hy4wmd.mp4",
+    link: "https://drive.google.com/file/d/1tOQgeAsH1uUSUtDe_3d7pAI2QBIUsgew/view?usp=drive_link",
   },
   {
     id: 3,
-    title: "women’s day",
+    title: "Women’s Day",
     subtitle: "Celebrating the strength, grace, and brilliance of women through powerful stories that inspire generations.",
     video: "https://res.cloudinary.com/djzzj4s72/video/upload/v1758518523/dehaat_Women_s_day_campaign_-_Grey_Greed_1080p_h264_jiuus6.mp4",
+    link: "https://youtu.be/vy1q-89b3GU ",
   },
   {
     id: 4,
     title: "Zomato",
     subtitle: "Transforming ideas into immersive experiences, celebrating flavor, culture, and connection through every captivating creation.",
     video: "https://res.cloudinary.com/djzzj4s72/video/upload/v1758132522/video05_1_ivbokb.mov",
+    link: "https://drive.google.com/file/d/1Qt49bKJCoUz2RT7Hpwn7apE6wjQrSlNO/view?usp=drive_link",
   },
 ]
 
@@ -130,24 +133,26 @@ export default function InfiniteImageCarousel() {
                     zIndex: getCardZIndex(index),
                   }}
                 >
-                  {/* Card */}
-                  <div className="relative w-48 h-64 md:w-64 md:h-80 lg:w-[800px] lg:h-[500px] bg-white rounded-3xl overflow-hidden shadow-2xl">
-                    {/* Background Video */}
-                    <LazyVideo
-                      src={item.video || "/placeholder.mp4"}
-                      className="w-full h-full object-cover"
-                    />
+                  {/* ✅ Clickable Card with YouTube Redirect */}
+                  <a href={item.link} target="_blank" rel="noopener noreferrer">
+                    <div className="relative w-48 h-64 md:w-64 md:h-80 lg:w-[800px] lg:h-[500px] bg-white rounded-3xl overflow-hidden shadow-2xl cursor-pointer">
+                      {/* Background Video */}
+                      <LazyVideo
+                        src={item.video || "/placeholder.mp4"}
+                        className="w-full h-full object-cover"
+                      />
 
-                    {/* Title + Subtitle Overlay */}
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-                      <h2 className="text-white text-lg md:text-4xl font-bold font-montserrat">
-                        {item.title}
-                      </h2>
-                      <p className="text-white/70 text-sm font-semibold md:text-lg">
-                        {item.subtitle}
-                      </p>
+                      {/* Title + Subtitle Overlay */}
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                        <h2 className="text-white text-lg md:text-4xl font-bold font-montserrat">
+                          {item.title}
+                        </h2>
+                        <p className="text-white/70 text-sm font-semibold md:text-lg">
+                          {item.subtitle}
+                        </p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               )
             })}
