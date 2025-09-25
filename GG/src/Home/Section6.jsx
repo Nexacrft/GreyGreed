@@ -11,7 +11,7 @@ export default function Home() {
 
         {/* WhatsApp Redirect */}
         <a
-          href="https://wa.me/917498487413?text=Hello%2C%20I%20would%20like%20to%20discuss%20a%20project%20idea."
+          href="https://wa.me/919654499044?text=Hello%2C%20I%20would%20like%20to%20discuss%20a%20project%20idea."
           target="_blank"
           rel="noopener noreferrer"
           className="bg-white/10 hover:bg-white hover:text-black text-white font-medium px-8 py-3 rounded-full text-base font-montserrat transition-colors duration-200 cursor-pointer"
