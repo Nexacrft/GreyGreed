@@ -19,7 +19,7 @@ export function Footer() {
           <a href="https://www.instagram.com/greygreedproductions/" className="text-white hover:text-gray-300 transition-colors" aria-label="Instagram">
             <Instagram size={24} />
           </a>
-          <a href="#" className="text-white hover:text-gray-300 transition-colors" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/company/greygreedproductions/?viewAsMember=true" className="text-white hover:text-gray-300 transition-colors" aria-label="LinkedIn">
             <Linkedin size={24} />
           </a>
         </div>

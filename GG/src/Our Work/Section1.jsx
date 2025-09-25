@@ -114,7 +114,7 @@ export default function OurWork() {
               activeTab === "Projects" ? "text-white border-b-2 border-white" : "text-gray-400 hover:text-gray-300"
             }`}
           >
-            Projects
+            Filmes
           </button>
           <button
             onClick={() => handleTabChange("Case Studies")}

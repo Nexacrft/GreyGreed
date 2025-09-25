@@ -41,18 +41,6 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />
       },
-      {
-        path: "/section1",
-        element: <Section1 />
-      },
-      {
-        path: "/section2",
-        element: <Section2 />
-      },
-      {
-        path: "/section3",
-        element: <Section3 />
-      },
     ]
   },
 ]);

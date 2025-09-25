@@ -5,14 +5,12 @@ export default function HomePage() {
     <div className="min-h-screen bg-[#0D0D0D] text-white px-8 py-12">
       {/* Section 2: Case Studies */}
       <section className="max-w-7xl mx-auto">
-        <h2 className="text-5xl font-thin text-white mb-10">Case Studies</h2>
-
         <div className="space-y-12">
           {/* Project 1 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
               <h3 className="text-3xl font-light text-white">
-                Project 1 – Harr Nivala Mamta Wala
+                 Harr Nivala Mamta Wala
               </h3>
               <div className="space-y-2 text-white/60">
                 <p><span className="font-semibold">Client:</span> DeHaat Honest Farms</p>
@@ -30,7 +28,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="aspect-video rounded-lg overflow-hidden">
+            <div className="aspect-video rounded-3xl border border-white/50 overflow-hidden">
               <iframe
                 src="https://drive.google.com/file/d/1lhKvtvZvajIUIFSf_iNk7Xm1rCha9q6t/preview"
                 className="w-full h-full"
@@ -43,7 +41,7 @@ export default function HomePage() {
           {/* Project 2 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
-              <h3 className="text-3xl font-light text-white">Project 2 – G-SHOCK Flagship Launch</h3>
+              <h3 className="text-3xl font-light text-white"> G-SHOCK Flagship Launch</h3>
               <div className="space-y-2 text-white/60">
                 <p><span className="font-semibold">Client:</span> G-SHOCK</p>
                 <p><span className="font-semibold">Agency:</span> Grey Greed Productions</p>
@@ -59,7 +57,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="aspect-video rounded-lg overflow-hidden">
+            <div className="aspect-video rounded-3xl border border-white/50 overflow-hidden">
               <iframe
                 src="https://drive.google.com/file/d/1gl9eJ3dwcAES9AU-___ukItP4o1qh6Ms/preview"
                 className="w-full h-full"
@@ -72,7 +70,7 @@ export default function HomePage() {
           {/* Project 3 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
-              <h3 className="text-3xl font-light text-white">Project 3 – #Maakipasandkakhaana</h3>
+              <h3 className="text-3xl font-light text-white"> #Maakipasandkakhaana</h3>
               <div className="space-y-2 text-white/60">
                 <p><span className="font-semibold">Client:</span> DeHaat Honest Farms</p>
                 <p><span className="font-semibold">Agency:</span> Grey Greed Productions</p>
@@ -87,7 +85,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="aspect-video rounded-lg overflow-hidden">
+            <div className="aspect-video rounded-3xl border border-white/50 overflow-hidden">
               <iframe
                 src="https://drive.google.com/file/d/1UTaw3XonceTUPIdUEdPXBDTQjLr1h3_s/preview"
                 className="w-full h-full"
@@ -100,7 +98,7 @@ export default function HomePage() {
           {/* Project 4 */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
-              <h3 className="text-3xl font-light text-white">Project 4 – Casio Mini Keyboard</h3>
+              <h3 className="text-3xl font-light text-white"> Casio Mini Keyboard</h3>
               <div className="space-y-2 text-white/60">
                 <p><span className="font-semibold">Client:</span> Casio Music</p>
                 <p><span className="font-semibold">Agency:</span> Grey Greed Productions</p>
@@ -115,7 +113,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="aspect-video rounded-lg overflow-hidden">
+            <div className="aspect-video rounded-3xl border border-white/50 overflow-hidden">
               <iframe
                 src="https://drive.google.com/file/d/19r9-nXTG8ZwE75xIaNnQyHXqEdDukQ5A/preview"
                 className="w-full h-full"

@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main className="min-h-fit bg-[#0D0D0D] flex items-center justify-center px-4 py-10">
       <div className="text-center max-w-6xl mx-auto">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-montserrat font-light text-white mb-6 text-balance">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-thin text-white mb-6 text-balance">
           Got a brief, a brand, or just a wild idea?
         </h1>
         <p className="text-lg md:text-xl text-gray-300 mb-8 text-pretty">

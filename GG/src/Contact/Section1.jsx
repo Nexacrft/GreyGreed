@@ -8,7 +8,7 @@ export default function ContactPage() {
     setStatus({ loading: true, success: null, error: null })
 
     const formData = new FormData(event.target)
-    formData.append("access_key", "fd3a1053-ff54-4d7b-9ff3-4e851e516c6e") // Replace with your Web3Forms access key
+    formData.append("access_key", "3a23eda8-8017-4ddb-be7f-08a91be262d3") // Replace with your Web3Forms access key
 
     const object = Object.fromEntries(formData)
     const json = JSON.stringify(object)
