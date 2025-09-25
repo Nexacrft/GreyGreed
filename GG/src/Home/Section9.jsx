@@ -56,10 +56,10 @@ const HeroVid = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0D0D0D] py-16 px-4 overflow-hidden">
+    <div className="min-h-screen bg-black bg-[radial-gradient(#ffffff_1.85px,#000000_1.85px)] [background-size:37px_37px] opacity-100 rounded-[70px]">
       <div className="max-w-7xl mx-auto">
         {/* Hero Header */}
-        <div className="text-center mb-16">
+        <div className="text-center pt-20 ">
           <h1 className="text-4xl md:text-6xl lg:text-7xl mb-4 text-balance">
             <span className="font-serif italic font-light text-white">
               Not Chasing Noise 
