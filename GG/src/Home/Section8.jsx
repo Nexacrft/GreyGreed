@@ -43,7 +43,7 @@ export default function HomePage() {
                 <div className="text-base md:text-lg font-inter text-gray-400">Watch Hours</div>
               </div>
               <div className="text-center sm:text-left">
-                <div className="text-3xl md:text-4xl font-light font-montserrat">20+</div>
+                <div className="text-3xl md:text-4xl font-light font-montserrat">50+</div>
                 <div className="text-base md:text-lg font-inter text-gray-400">Brands</div>
               </div>
             </div>
