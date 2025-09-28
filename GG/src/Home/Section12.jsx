@@ -18,28 +18,28 @@ const Section12 = () => {
     role: "Head Of Brand Communications, Digital and PR, Oriflame India",
     location: "India",
     quote: "A team who understands new generation. Passion driven objective led and grounded to deliver good job that is what I know about Grey Greed. Kudos to the young and energetic team.",
-    image: "/abhishek-chaktraborty.png",
+    image: "https://i.pinimg.com/1200x/97/e9/37/97e93701392a53ae68113b48e1a8956b.jpg",
   },
   {
     name: "Akash Malhotra",
     role: "Vice President - Marketing, DeHaat",
     location: "India",
     quote: "Partnering with Grey Greed has been a game changer for DeHaat Honest Farms. They started from scratch, building our social media presence from the ground up. Be it content creation, influencer associations or building innovative ways of content dissemination, Grey Greed brought fresh ideas, consistency, and a deep understanding of our brand. The team is professional, creative, and always responsive. It's been wonderful co-creating with them.",
-    image: "https://media.licdn.com/dms/image/v2/D5603AQFYEeafamkaIg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723482580706?e=1761177600&v=beta&t=RMMQFnafam2I7pR9neXFvNRKHXkikvFkq7lAHOADr9k",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQEW30J5BkweOQ/profile-displayphoto-crop_800_800/B56Zl7l1gNI0AI-/0/1758715140939?e=1761782400&v=beta&t=FtfC2Zcr0zwkfDvYklvj35rryQNMtF4_QSwOnbLjGJI",
   },
   {
     name: "Muskan Jain",
     role: "Brand Manager, Mars Cosmetics",
     location: "India",
     quote: "This has turned out to be one of our finest content pieces to date! Huge thanks to the team for their creativity and dedication! Excited to see us raise the bar even higher with every project.",
-    image: "/muskan-jain.png",
+    image: "https://i.pinimg.com/1200x/97/e9/37/97e93701392a53ae68113b48e1a8956b.jpg",
   },
   {
     name: "Apurv Anand",
     role: "Founder, SceneZone",
     location: "India",
     quote: "Amazing job with the direction and production. Innovative executors in the creative world.",
-    image: "/apurv-anand.png",
+    image: "https://i.pinimg.com/1200x/97/e9/37/97e93701392a53ae68113b48e1a8956b.jpg",
   },
 ]
 

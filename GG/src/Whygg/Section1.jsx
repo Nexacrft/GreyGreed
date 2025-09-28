@@ -70,7 +70,7 @@ export default function Home() {
         </section>
 
         {/* Client Testimonials Section */}
-        <section className="mb-20  text-black py-16 px-8 rounded-3xl">
+        <section>
           <Section12/>
         </section>
 
