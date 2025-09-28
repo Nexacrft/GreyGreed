@@ -56,7 +56,7 @@ const HeroVid = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black bg-[linear-gradient(#131313_4px,transparent_4px),linear-gradient(to_right,#131313_4px,#000000_4px)] bg-[length:80px_80px] opacity-100 rounded-[70px]">
+    <div className="min-h-screen bg-black bg-[linear-gradient(#131313_4px,transparent_4px),linear-gradient(to_right,#131313_4px,#000000_4px)] bg-[length:80px_80px] opacity-100 rounded-[70px] overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Hero Header */}
         <div className="text-center pt-20 ">
