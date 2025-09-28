@@ -136,7 +136,7 @@ const Section12 = () => {
                         />
                       </div>
 
-                      <Quote className="w-8 h-8 text-blue-700 mb-6" />
+                      <Quote className="w-8 h-8 text-white mb-6" />
 
                       <p className="text-sm font-thin text-white leading-tight mb-8">{testimonial.quote}</p>
 
