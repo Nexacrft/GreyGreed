@@ -28,7 +28,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="aspect-video rounded-3xl border border-white/50 overflow-hidden">
+            <div className="aspect-video rounded-3xl border border-white/20  overflow-hidden">
               <iframe
                 src="https://drive.google.com/file/d/1lhKvtvZvajIUIFSf_iNk7Xm1rCha9q6t/preview"
                 className="w-full h-full"
@@ -57,7 +57,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="aspect-video rounded-3xl border border-white/50 overflow-hidden">
+            <div className="aspect-video rounded-3xl border border-white/20 overflow-hidden">
               <iframe
                 src="https://drive.google.com/file/d/1gl9eJ3dwcAES9AU-___ukItP4o1qh6Ms/preview"
                 className="w-full h-full"
@@ -85,7 +85,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="aspect-video rounded-3xl border border-white/50 overflow-hidden">
+            <div className="aspect-video rounded-3xl border border-white/20 overflow-hidden">
               <iframe
                 src="https://drive.google.com/file/d/1UTaw3XonceTUPIdUEdPXBDTQjLr1h3_s/preview"
                 className="w-full h-full"
@@ -113,7 +113,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="aspect-video rounded-3xl border border-white/50 overflow-hidden">
+            <div className="aspect-video rounded-3xl border border-white/20 overflow-hidden">
               <iframe
                 src="https://drive.google.com/file/d/19r9-nXTG8ZwE75xIaNnQyHXqEdDukQ5A/preview"
                 className="w-full h-full"

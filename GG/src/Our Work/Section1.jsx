@@ -5,77 +5,186 @@ import Section1 from '../Home/Section3' // added import
 const projects = [
   {
     id: 1,
-    title: "Creative Storytelling Through Films",
+    title: "AI AND CGI FILMS",
+    subtitle: "Where technology meets imagination.",
     category:
-      "Films & Brand Films – Stories that blur the line between cinema and brand, living rent-free in memory.",
-    link: "https://www.youtube.com/embed/f5WOPLGKQg0",
-    tags: ["lighting", "studio", "production"],
+      "Digital Creations – Visuals engineered with artificial intelligence and CGI.",
+    link: "https://www.youtube.com/embed/6CkpfEWtDnY",
+    tags: ["ai", "cgi", "creativity"],
   },
   {
     id: 2,
-    title: "UGC Campaigns",
+    title: "Braun IPL",
+    subtitle: "A product story that glows with confidence.",
     category:
-      "User-Generated Content – Raw. Real. Reckless. Everyday creators turned into authentic brand storytellers.",
-    link: "https://www.youtube.com/embed/ZmCfdxBHlyM",
-    tags: ["camera", "equipment", "professional"],
+      "Product Campaign – Highlighting beauty and personal care technology.",
+    link: "https://www.youtube.com/embed/Ahr8SyE51Cw",
+    tags: ["product", "beauty", "tech"],
   },
   {
     id: 3,
-    title: "AI-Driven CGI Showcase",
+    title: "Casio mIni keyboard",
+    subtitle: "Music reimagined for little talents.",
     category:
-      "Digital Creations – Where imagination meets engineering to deliver visuals powered by CGI and AI.",
-    link: "https://www.youtube.com/embed/gBWWlncXdjA",
-    tags: ["cgi", "ai", "creativity"],
+      "Brand Films – Showcasing instruments as joyful companions for kids.",
+    link: "https://www.youtube.com/embed/U07S_X4Qqcg",
+    tags: ["music", "kids", "brand film"],
   },
   {
     id: 4,
-    title: "Short-Form Visual Narratives",
+    title: "Casio mIni keyboard FILM 2",
+    subtitle: "A cinematic take on playful music.",
     category:
-      "Micro-Content – Engaging short videos crafted to grab attention instantly.",
-    link: "https://www.youtube.com/embed/3CusukXadQU",
-    tags: ["shorts", "reels", "quick content"],
+      "Films – Second chapter of Casio’s storytelling through sound.",
+    link: "https://www.youtube.com/embed/TAD0WJtz-ow",
+    tags: ["music", "storytelling", "cinema"],
   },
   {
     id: 5,
-    title: "Next-Gen Digital VFX",
+    title: "cosco",
+    subtitle: "Sports and fitness brought to life.",
     category:
-      "Visual Effects – Advanced editing and effects to enhance storytelling through motion.",
-    link: "https://www.youtube.com/embed/GzfJdQUFXs4",
-    tags: ["vfx", "motion", "effects"],
+      "Reels & Shorts – Quick, energetic stories about sports products.",
+    link: "https://www.youtube.com/embed/qeiYXpLKKdg",
+    tags: ["sports", "fitness", "shorts"],
   },
   {
     id: 6,
-    title: "Immersive Motion Graphics",
+    title: "Dehaat Cattle Care X Grey Greed",
+    subtitle: "A heartfelt campaign for rural wellness.",
     category:
-      "Motion Design – Blending design, animation, and interactivity for impactful visuals.",
-    link: "https://www.youtube.com/embed/6CkpfEWtDnY",
-    tags: ["motion", "graphics", "design"],
+      "Campaign Films – Agricultural products told through storytelling.",
+    link: "https://www.youtube.com/embed/_E6YkGma5tQ",
+    tags: ["agriculture", "cattle", "brand"],
   },
   {
     id: 7,
-    title: "Creative AI Edits",
+    title: "DHF AR FILTER",
+    subtitle: "Playful interactions powered by AR.",
     category:
-      "AI-Powered Edits – Leveraging artificial intelligence to transform raw footage into captivating stories.",
-    link: "https://www.youtube.com/embed/YUq-V3Z3Q5w",
-    tags: ["ai", "edits", "innovation"],
+      "AR Innovation – Bridging creativity with interactive augmented filters.",
+    link: "https://www.youtube.com/embed/3CusukXadQU",
+    tags: ["ar", "filter", "innovation"],
   },
   {
     id: 8,
-    title: "Product Storytelling",
+    title: "G-SHOCK Brand film",
+    subtitle: "Celebrating toughness with a cultural edge.",
     category:
-      "Brand Showcases – Highlighting products with compelling narratives and visuals.",
-    link: "https://www.youtube.com/embed/2Um7Q8qTThM",
-    tags: ["product", "branding", "storytelling"],
+      "Brand Film – Rooted in street culture to amplify brand voice.",
+    link: "https://www.youtube.com/embed/fLYjugz26rM",
+    tags: ["watch", "street", "brand"],
   },
   {
     id: 9,
-    title: "Experimental Visual Arts",
+    title: "Independence Day CGI",
+    subtitle: "Patriotism rendered in pixels.",
     category:
-      "Creative Experiments – Pushing the boundaries of digital art and cinematic visuals.",
-    link: "https://www.youtube.com/embed/kZMgJ7b1pjI",
-    tags: ["art", "experimental", "visuals"],
+      "CGI Film – Digital storytelling for national celebration.",
+    link: "https://www.youtube.com/embed/YUq-V3Z3Q5w",
+    tags: ["cgi", "independence", "visuals"],
+  },
+  {
+    id: 10,
+    title: "International Women’s Day",
+    subtitle: "Empowering stories of women, beautifully told.",
+    category:
+      "Campaign – A tribute to women through cinematic visuals.",
+    link: "https://www.youtube.com/embed/vy1q-89b3GU",
+    tags: ["women", "empowerment", "campaign"],
+  },
+  {
+    id: 11,
+    title: "Kheton Ka zaika",
+    subtitle: "The taste of farms brought home.",
+    category:
+      "Food Campaign – Capturing authentic flavors from the source.",
+    link: "https://www.youtube.com/embed/eg-EVXX10KQ",
+    tags: ["food", "farm", "authentic"],
+  },
+  {
+    id: 12,
+    title: "Mars Brand FILM",
+    subtitle: "Cinematic stories for a global brand.",
+    category:
+      "Ad Film – Creating engaging narratives for the Mars brand.",
+    link: "https://www.youtube.com/embed/zmsPLemLikg",
+    tags: ["brand", "cinema", "advertising"],
+  },
+  {
+    id: 13,
+    title: "Mother’s Day ad film",
+    subtitle: "Celebrating mothers through heartfelt films.",
+    category:
+      "Occasion Campaign – Storytelling wrapped in emotion and love.",
+    link: "https://www.youtube.com/embed/M8xJ8MZEy20",
+    tags: ["mother", "love", "film"],
+  },
+  {
+    id: 14,
+    title: "MOTHER’S DAY FOR CASE STUDY",
+    subtitle: "When moms became brand ambassadors.",
+    category:
+      "Case Study – A campaign that turned real-life mothers into storytellers.",
+    link: "https://www.youtube.com/embed/RQaTitvXrRo",
+    tags: ["case study", "mother", "campaign"],
+  },
+  {
+    id: 15,
+    title: "Oriflame podcast",
+    subtitle: "Conversations beyond products.",
+    category:
+      "Podcast Series – Expanding beauty storytelling into audio format.",
+    link: "https://www.youtube.com/embed/5iH8uuMrMT0",
+    tags: ["podcast", "beauty", "conversation"],
+  },
+  {
+    id: 16,
+    title: "Oriflame Product CGI",
+    subtitle: "Beauty crafted in digital pixels.",
+    category:
+      "Product CGI – Virtual production showcasing Oriflame innovation.",
+    link: "https://www.youtube.com/embed/gBWWlncXdjA",
+    tags: ["oriflame", "cgi", "digital"],
+  },
+  {
+    id: 17,
+    title: "Pink Celestial brand film",
+    subtitle: "A dreamy visual journey.",
+    category:
+      "Brand Film – Crafting poetic visuals for a celestial brand.",
+    link: "https://www.youtube.com/embed/3RBHkkrTSg4",
+    tags: ["brand", "aesthetic", "film"],
+  },
+  {
+    id: 18,
+    title: "Swamish Brand Film",
+    subtitle: "Tradition meets modern storytelling.",
+    category:
+      "Brand Film – Blending heritage with cinematic craft.",
+    link: "https://www.youtube.com/embed/52gx6yWk-0M",
+    tags: ["heritage", "brand", "cinema"],
+  },
+  {
+    id: 19,
+    title: "Work",
+    subtitle: "Our creative portfolio of stories.",
+    category:
+      "Films & Brand Films – Stories that blur the line between cinema and brand, living rent-free in memory.",
+    link: "https://www.youtube.com/embed/f5WOPLGKQg0",
+    tags: ["portfolio", "showcase", "films"],
+  },
+  {
+    id: 20,
+    title: "Zomato",
+    subtitle: "Food delivery with a creative twist.",
+    category:
+      "Ad Campaign – Relatable storytelling for a household name.",
+    link: "https://www.youtube.com/embed/DiSTXKecZho",
+    tags: ["food", "delivery", "brand"],
   },
 ]
+
 
 export default function OurWork() {
   const [activeTab, setActiveTab] = useState("Projects")
