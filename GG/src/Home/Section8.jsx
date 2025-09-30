@@ -19,12 +19,13 @@ export default function HomePage() {
           <div className="lg:col-span-2 space-y-6 md:space-y-8">
             <div className="space-y-3 md:space-y-4">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-montserrat font-light">About</h1>
-              <p className="text-base md:text-lg text-gray-400 leading-relaxed font-montserrat">
-                We're Grey Greed - A Creative Agency & Production House. We don't chase trends. We create for brands
-                with content, culture & tech. From Ad Films to UGCs, Influencer Collabs to full-blown Campaigns - we
-                make content that cuts through the noise and delivers. We're not just a vendor. We're your creative
-                partners.
-              </p>
+             <p className="text-base md:text-base text-gray-400 font-montserrat leading-relaxed">
+  We're Grey Greed A Creative Agency Production House.&nbsp; 
+  We don't chase trends. We create for brands with content, culture &amp; tech. 
+  <br />
+  <br />
+  From Ad Films to UGCs, Influencer Collabs to full-blown Campaigns - we make content that cuts through the noise and delivers. We're not just a vendor. We're your creative partners.
+</p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">

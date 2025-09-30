@@ -5,24 +5,6 @@ import Section1 from '../Home/Section3' // added import
 const projects = [
   {
     id: 1,
-    title: "AI AND CGI FILMS",
-    subtitle: "Where technology meets imagination.",
-    category:
-      "Digital Creations – Visuals engineered with artificial intelligence and CGI.",
-    link: "https://www.youtube.com/embed/6CkpfEWtDnY",
-    tags: ["ai", "cgi", "creativity"],
-  },
-  {
-    id: 2,
-    title: "Braun IPL",
-    subtitle: "A product story that glows with confidence.",
-    category:
-      "Product Campaign – Highlighting beauty and personal care technology.",
-    link: "https://www.youtube.com/embed/Ahr8SyE51Cw",
-    tags: ["product", "beauty", "tech"],
-  },
-  {
-    id: 3,
     title: "Casio mIni keyboard",
     subtitle: "Music reimagined for little talents.",
     category:
@@ -31,7 +13,7 @@ const projects = [
     tags: ["music", "kids", "brand film"],
   },
   {
-    id: 4,
+    id: 2,
     title: "Casio mIni keyboard FILM 2",
     subtitle: "A cinematic take on playful music.",
     category:
@@ -40,16 +22,7 @@ const projects = [
     tags: ["music", "storytelling", "cinema"],
   },
   {
-    id: 5,
-    title: "cosco",
-    subtitle: "Sports and fitness brought to life.",
-    category:
-      "Reels & Shorts – Quick, energetic stories about sports products.",
-    link: "https://www.youtube.com/embed/qeiYXpLKKdg",
-    tags: ["sports", "fitness", "shorts"],
-  },
-  {
-    id: 6,
+    id: 3,
     title: "Dehaat Cattle Care X Grey Greed",
     subtitle: "A heartfelt campaign for rural wellness.",
     category:
@@ -58,34 +31,7 @@ const projects = [
     tags: ["agriculture", "cattle", "brand"],
   },
   {
-    id: 7,
-    title: "DHF AR FILTER",
-    subtitle: "Playful interactions powered by AR.",
-    category:
-      "AR Innovation – Bridging creativity with interactive augmented filters.",
-    link: "https://www.youtube.com/embed/3CusukXadQU",
-    tags: ["ar", "filter", "innovation"],
-  },
-  {
-    id: 8,
-    title: "G-SHOCK Brand film",
-    subtitle: "Celebrating toughness with a cultural edge.",
-    category:
-      "Brand Film – Rooted in street culture to amplify brand voice.",
-    link: "https://www.youtube.com/embed/fLYjugz26rM",
-    tags: ["watch", "street", "brand"],
-  },
-  {
-    id: 9,
-    title: "Independence Day CGI",
-    subtitle: "Patriotism rendered in pixels.",
-    category:
-      "CGI Film – Digital storytelling for national celebration.",
-    link: "https://www.youtube.com/embed/YUq-V3Z3Q5w",
-    tags: ["cgi", "independence", "visuals"],
-  },
-  {
-    id: 10,
+    id: 4,
     title: "International Women’s Day",
     subtitle: "Empowering stories of women, beautifully told.",
     category:
@@ -94,16 +40,7 @@ const projects = [
     tags: ["women", "empowerment", "campaign"],
   },
   {
-    id: 11,
-    title: "Kheton Ka zaika",
-    subtitle: "The taste of farms brought home.",
-    category:
-      "Food Campaign – Capturing authentic flavors from the source.",
-    link: "https://www.youtube.com/embed/eg-EVXX10KQ",
-    tags: ["food", "farm", "authentic"],
-  },
-  {
-    id: 12,
+    id: 5,
     title: "Mars Brand FILM",
     subtitle: "Cinematic stories for a global brand.",
     category:
@@ -112,16 +49,7 @@ const projects = [
     tags: ["brand", "cinema", "advertising"],
   },
   {
-    id: 13,
-    title: "Mother’s Day ad film",
-    subtitle: "Celebrating mothers through heartfelt films.",
-    category:
-      "Occasion Campaign – Storytelling wrapped in emotion and love.",
-    link: "https://www.youtube.com/embed/M8xJ8MZEy20",
-    tags: ["mother", "love", "film"],
-  },
-  {
-    id: 14,
+    id: 6,
     title: "MOTHER’S DAY FOR CASE STUDY",
     subtitle: "When moms became brand ambassadors.",
     category:
@@ -130,25 +58,7 @@ const projects = [
     tags: ["case study", "mother", "campaign"],
   },
   {
-    id: 15,
-    title: "Oriflame podcast",
-    subtitle: "Conversations beyond products.",
-    category:
-      "Podcast Series – Expanding beauty storytelling into audio format.",
-    link: "https://www.youtube.com/embed/5iH8uuMrMT0",
-    tags: ["podcast", "beauty", "conversation"],
-  },
-  {
-    id: 16,
-    title: "Oriflame Product CGI",
-    subtitle: "Beauty crafted in digital pixels.",
-    category:
-      "Product CGI – Virtual production showcasing Oriflame innovation.",
-    link: "https://www.youtube.com/embed/gBWWlncXdjA",
-    tags: ["oriflame", "cgi", "digital"],
-  },
-  {
-    id: 17,
+    id: 7,
     title: "Pink Celestial brand film",
     subtitle: "A dreamy visual journey.",
     category:
@@ -157,16 +67,25 @@ const projects = [
     tags: ["brand", "aesthetic", "film"],
   },
   {
-    id: 18,
-    title: "Swamish Brand Film",
-    subtitle: "Tradition meets modern storytelling.",
+    id: 8,
+    title: "Oriflame podcast",
+    subtitle: "Conversations beyond products.",
     category:
-      "Brand Film – Blending heritage with cinematic craft.",
-    link: "https://www.youtube.com/embed/52gx6yWk-0M",
-    tags: ["heritage", "brand", "cinema"],
+      "Podcast Series – Expanding beauty storytelling into audio format.",
+    link: "https://www.youtube.com/embed/5iH8uuMrMT0",
+    tags: ["podcast", "beauty", "conversation"],
   },
   {
-    id: 19,
+    id: 9,
+    title: "Zomato",
+    subtitle: "Food delivery with a creative twist.",
+    category:
+      "Ad Campaign – Relatable storytelling for a household name.",
+    link: "https://www.youtube.com/embed/DiSTXKecZho",
+    tags: ["food", "delivery", "brand"],
+  },
+  {
+    id: 10,
     title: "Work",
     subtitle: "Our creative portfolio of stories.",
     category:
@@ -175,15 +94,99 @@ const projects = [
     tags: ["portfolio", "showcase", "films"],
   },
   {
-    id: 20,
-    title: "Zomato",
-    subtitle: "Food delivery with a creative twist.",
+    id: 11,
+    title: "Oriflame Product CGI",
+    subtitle: "Beauty crafted in digital pixels.",
     category:
-      "Ad Campaign – Relatable storytelling for a household name.",
-    link: "https://www.youtube.com/embed/DiSTXKecZho",
-    tags: ["food", "delivery", "brand"],
+      "Product CGI – Virtual production showcasing Oriflame innovation.",
+    link: "https://www.youtube.com/embed/gBWWlncXdjA",
+    tags: ["oriflame", "cgi", "digital"],
+  },
+
+  // ---- Remaining projects appended below ----
+  {
+    id: 12,
+    title: "AI AND CGI FILMS",
+    subtitle: "Where technology meets imagination.",
+    category:
+      "Digital Creations – Visuals engineered with artificial intelligence and CGI.",
+    link: "https://www.youtube.com/embed/6CkpfEWtDnY",
+    tags: ["ai", "cgi", "creativity"],
+  },
+  {
+    id: 13,
+    title: "Braun IPL",
+    subtitle: "A product story that glows with confidence.",
+    category:
+      "Product Campaign – Highlighting beauty and personal care technology.",
+    link: "https://www.youtube.com/embed/Ahr8SyE51Cw",
+    tags: ["product", "beauty", "tech"],
+  },
+  {
+    id: 14,
+    title: "cosco",
+    subtitle: "Sports and fitness brought to life.",
+    category:
+      "Reels & Shorts – Quick, energetic stories about sports products.",
+    link: "https://www.youtube.com/embed/qeiYXpLKKdg",
+    tags: ["sports", "fitness", "shorts"],
+  },
+  {
+    id: 15,
+    title: "DHF AR FILTER",
+    subtitle: "Playful interactions powered by AR.",
+    category:
+      "AR Innovation – Bridging creativity with interactive augmented filters.",
+    link: "https://www.youtube.com/embed/3CusukXadQU",
+    tags: ["ar", "filter", "innovation"],
+  },
+  {
+    id: 16,
+    title: "G-SHOCK Brand film",
+    subtitle: "Celebrating toughness with a cultural edge.",
+    category:
+      "Brand Film – Rooted in street culture to amplify brand voice.",
+    link: "https://www.youtube.com/embed/fLYjugz26rM",
+    tags: ["watch", "street", "brand"],
+  },
+  {
+    id: 17,
+    title: "Independence Day CGI",
+    subtitle: "Patriotism rendered in pixels.",
+    category:
+      "CGI Film – Digital storytelling for national celebration.",
+    link: "https://www.youtube.com/embed/YUq-V3Z3Q5w",
+    tags: ["cgi", "independence", "visuals"],
+  },
+  {
+    id: 18,
+    title: "Kheton Ka zaika",
+    subtitle: "The taste of farms brought home.",
+    category:
+      "Food Campaign – Capturing authentic flavors from the source.",
+    link: "https://www.youtube.com/embed/eg-EVXX10KQ",
+    tags: ["food", "farm", "authentic"],
+  },
+  {
+    id: 19,
+    title: "Mother’s Day ad film",
+    subtitle: "Celebrating mothers through heartfelt films.",
+    category:
+      "Occasion Campaign – Storytelling wrapped in emotion and love.",
+    link: "https://www.youtube.com/embed/M8xJ8MZEy20",
+    tags: ["mother", "love", "film"],
+  },
+  {
+    id: 20,
+    title: "Swamish Brand Film",
+    subtitle: "Tradition meets modern storytelling.",
+    category:
+      "Brand Film – Blending heritage with cinematic craft.",
+    link: "https://www.youtube.com/embed/52gx6yWk-0M",
+    tags: ["heritage", "brand", "cinema"],
   },
 ]
+
 
 
 export default function OurWork() {
@@ -223,7 +226,7 @@ export default function OurWork() {
               activeTab === "Projects" ? "text-white border-b-2 border-white" : "text-gray-400 hover:text-gray-300"
             }`}
           >
-            Filmes
+            Films
           </button>
           <button
             onClick={() => handleTabChange("Case Studies")}

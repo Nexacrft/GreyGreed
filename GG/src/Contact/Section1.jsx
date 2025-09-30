@@ -128,7 +128,7 @@ export default function ContactPage() {
         <div className="mt-8 sm:mt-12">
           <h2 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Contact Information</h2>
           <div className="space-y-2 text-gray-300 text-sm sm:text-base">
-            <p>Email: jagriti@graygreedproductions.com</p>
+            <p>Email: jagriti@greygreedproductions.com</p>
             <p>Phone: +91 9654499044</p>
           </div>
         </div>

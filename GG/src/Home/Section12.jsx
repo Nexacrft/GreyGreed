@@ -18,7 +18,7 @@ const Section12 = () => {
     role: "Head Of Brand Communications, Digital and PR, Oriflame India",
     location: "India",
     quote: "A team who understands new generation. Passion driven objective led and grounded to deliver good job that is what I know about Grey Greed. Kudos to the young and energetic team.",
-    image: "https://i.pinimg.com/1200x/97/e9/37/97e93701392a53ae68113b48e1a8956b.jpg",
+    image: "https://i.postimg.cc/8CXGrPyZ/Whats-App-Image-2025-09-29-at-8-46-51-PM.jpg",
   },
   {
     name: "Akash Malhotra",
@@ -32,14 +32,14 @@ const Section12 = () => {
     role: "Brand Manager, Mars Cosmetics",
     location: "India",
     quote: "This has turned out to be one of our finest content pieces to date! Huge thanks to the team for their creativity and dedication! Excited to see us raise the bar even higher with every project.",
-    image: "https://i.pinimg.com/1200x/97/e9/37/97e93701392a53ae68113b48e1a8956b.jpg",
+    image: "https://i.postimg.cc/tgjZmDy8/Screenshot-2025-09-30-at-4-15-44-PM.png",
   },
   {
     name: "Apurv Anand",
     role: "Founder, SceneZone",
     location: "India",
     quote: "Amazing job with the direction and production. Innovative executors in the creative world.",
-    image: "https://i.pinimg.com/1200x/97/e9/37/97e93701392a53ae68113b48e1a8956b.jpg",
+    image: "https://i.postimg.cc/jdxMBQqb/Whats-App-Image-2025-09-29-at-8-47-26-PM.jpg",
   },
 ]
 
