@@ -5,28 +5,28 @@ const carouselItems = [
     id: 1,
     title: "Mars",
     subtitle: "Exploring new horizons, igniting innovation, and pushing boundaries to transform every vision into extraordinary reality.",
-    video: "https://res.cloudinary.com/djzzj4s72/video/upload/v1758131278/video02_xw5rwk.mp4",
+    video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762077111/Mars_Master_Video_p8qaeo.mp4",
     link: "https://youtu.be/FZvbR8M5lXk ", // ✅ Add YouTube link
   },
   {
     id: 2,
     title: "Casio",
     subtitle: "Blending precision with creativity, capturing timeless moments, and crafting experiences that resonate across generations.",
-    video: "https://res.cloudinary.com/djzzj4s72/video/upload/v1758131381/video03_hy4wmd.mp4",
+    video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762077277/Casio_X_GreyGreed_Productions_EMI_Keyboard_oqsccr.mp4",
     link: "https://drive.google.com/file/d/1tOQgeAsH1uUSUtDe_3d7pAI2QBIUsgew/view?usp=drive_link",
   },
   {
     id: 3,
     title: "Women’s Day",
     subtitle: "Celebrating the strength, grace, and brilliance of women through powerful stories that inspire generations.",
-    video: "https://res.cloudinary.com/djzzj4s72/video/upload/v1758518523/dehaat_Women_s_day_campaign_-_Grey_Greed_1080p_h264_jiuus6.mp4",
+    video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762077523/dehaat_Women_s_day_campaign_e5qxot.mp4",
     link: "https://youtu.be/vy1q-89b3GU ",
   },
   {
     id: 4,
     title: "Zomato",
     subtitle: "Transforming ideas into immersive experiences, celebrating flavor, culture, and connection through every captivating creation.",
-    video: "https://res.cloudinary.com/djzzj4s72/video/upload/v1758132522/video05_1_ivbokb.mov",
+    video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762077897/Zomato_DVC_blt1ks.mp4",
     link: "https://drive.google.com/file/d/1Qt49bKJCoUz2RT7Hpwn7apE6wjQrSlNO/view?usp=drive_link",
   },
 ]

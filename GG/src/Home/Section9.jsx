@@ -46,13 +46,13 @@ const LazyVideo = ({ src, className }) => {
 
 const HeroVid = () => {
   const cards = [
-    { rotateY: 60, height: "h-96", width: "w-64", video: "https://res.cloudinary.com/djzzj4s72/video/upload/v1758122241/hero1_ygpqbs.mp4" },
-    { rotateY: 40, height: "h-80", width: "w-52", video: "https://res.cloudinary.com/djzzj4s72/video/upload/v1758123183/hero2_1_j2fudl.mp4" },
-    { rotateY: 20, height: "h-72", width: "w-48", video: "https://res.cloudinary.com/djzzj4s72/video/upload/v1758125908/hero3_1_ddiwdb.mp4" },
-    { rotateY: 0, height: "h-72", width: "w-44", video: "https://res.cloudinary.com/djzzj4s72/video/upload/v1758126936/reelg_x32x9g.mp4" },
-    { rotateY: -20, height: "h-72", width: "w-48", video: "https://res.cloudinary.com/djzzj4s72/video/upload/v1758130732/hero5_1_1_sbnvak.mp4" },
-    { rotateY: -40, height: "h-80", width: "w-52", video: "https://res.cloudinary.com/djzzj4s72/video/upload/v1758131070/hero6_1_tkspav.mp4" },
-    { rotateY: -60, height: "h-96", width: "w-64", video: "https://res.cloudinary.com/djzzj4s72/video/upload/v1758126766/hero4_1_1_syuhwi.mov" },
+    { rotateY: 60, height: "h-96", width: "w-64", video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762075884/cosco_Magnetic_Bottle_bf9mqd.mp4" },
+    { rotateY: 40, height: "h-80", width: "w-52", video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762076009/Kebab_ucv0gw.mp4" },
+    { rotateY: 20, height: "h-72", width: "w-48", video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762076129/INSTAX_X_Grey_Greed_irwmmt.mp4" },
+    { rotateY: 0, height: "h-72", width: "w-44", video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762075680/G-Shock_X_GreyGreed_Vox_Pop_sw3c0g.mp4" },
+    { rotateY: -20, height: "h-72", width: "w-48", video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762076224/Mother_s_Day_Dehaat_X_Grey_Greed_jcswjb.mp4" },
+    { rotateY: -40, height: "h-80", width: "w-52", video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762076299/DHF_Ghee_X_GreyGreed_PRODUCT_FILM_zk6jjj.mp4" },
+    { rotateY: -60, height: "h-96", width: "w-64", video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762076375/Oriflame_Cgi_Video_yrf5p8.mp4" },
   ];
 
   return (

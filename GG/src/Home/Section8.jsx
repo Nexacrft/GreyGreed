@@ -4,10 +4,10 @@ import { Link } from "react-router"
 export default function HomePage() {
   // Instead of importing videos, use links (URLs)
   const videoLinks = [
-    "https://res.cloudinary.com/djzzj4s72/video/upload/v1758132572/reel5_gmomcn.mp4",
-    "https://res.cloudinary.com/djzzj4s72/video/upload/v1758132804/reel4_ylrqd9.mp4",
-    "https://res.cloudinary.com/djzzj4s72/video/upload/v1758130732/hero5_1_1_sbnvak.mp4",
-    "https://res.cloudinary.com/djzzj4s72/video/upload/v1758126936/reelg_x32x9g.mp4",
+    "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762076587/cosco_Magnetic_Bottle_ebyvzw.mp4",
+    "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762076692/cosco_pickle_ball_gejk1l.mp4",
+    "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762076828/Honest_Farms_daadi_k_nushke_nnvdd1.mp4",
+    "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762076953/LenskART_x_Chitran_X_Grey_Greed_cjys2c.mp4",
   ]
 
   return (
