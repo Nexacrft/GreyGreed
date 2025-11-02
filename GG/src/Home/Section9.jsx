@@ -47,12 +47,12 @@ const LazyVideo = ({ src, className }) => {
 const HeroVid = () => {
   const cards = [
     { rotateY: 60, height: "h-96", width: "w-64", video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762075884/cosco_Magnetic_Bottle_bf9mqd.mp4" },
-    { rotateY: 40, height: "h-80", width: "w-52", video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762076009/Kebab_ucv0gw.mp4" },
-    { rotateY: 20, height: "h-72", width: "w-48", video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762076129/INSTAX_X_Grey_Greed_irwmmt.mp4" },
+    { rotateY: 40, height: "h-80", width: "w-52", video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762098729/G-SHOCK_X_GreyGreed_Productions_Store_launch_ej2lye.mp4" },
+    { rotateY: 20, height: "h-72", width: "w-48", video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762100799/love_nature_1_d9r0xc.mp4" },
     { rotateY: 0, height: "h-72", width: "w-44", video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762075680/G-Shock_X_GreyGreed_Vox_Pop_sw3c0g.mp4" },
-    { rotateY: -20, height: "h-72", width: "w-48", video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762076224/Mother_s_Day_Dehaat_X_Grey_Greed_jcswjb.mp4" },
-    { rotateY: -40, height: "h-80", width: "w-52", video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762076299/DHF_Ghee_X_GreyGreed_PRODUCT_FILM_zk6jjj.mp4" },
-    { rotateY: -60, height: "h-96", width: "w-64", video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762076375/Oriflame_Cgi_Video_yrf5p8.mp4" },
+    { rotateY: -20, height: "h-72", width: "w-48", video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762076299/DHF_Ghee_X_GreyGreed_PRODUCT_FILM_zk6jjj.mp4" },
+    { rotateY: -40, height: "h-80", width: "w-52", video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762098183/COSCO_YOGA_MAT_embjj3.mp4" },
+    { rotateY: -60, height: "h-96", width: "w-64", video: "https://res.cloudinary.com/dmo8bqzrx/video/upload/v1762098546/Arata_X_Grey_Greed_cu94ao.mp4" },
   ];
 
   return (
